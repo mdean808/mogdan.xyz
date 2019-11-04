@@ -1,0 +1,8 @@
+$primary_color: #b993d6;
+$secondary_color: #8ca6db;
+
+$primary_gradient: linear-gradient(to right, $primary_color, $secondary_color);
+$secondary_gradient: linear-gradient(25deg, #110ea9, #188dff);
+
+$large-screen: 1000px;
+$small_screen: 900px;
