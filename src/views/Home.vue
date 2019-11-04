@@ -4,6 +4,7 @@
             <h1>I'm Morgan Dean</h1>
             <h2>I like soft pastel gradients and hard lines.</h2>
             <br>
+            <a href="mailto:morgandeanhi@gmail.com" class="btn">Email</a>
             <br>
             <br>
             <img src="../assets/down.svg" alt="Down Arrow" style="height: 40vh">
