@@ -147,4 +147,17 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+    body::-webkit-scrollbar {
+        width: 0 !important
+    }
+
+    body {
+        overflow: -moz-scrollbars-none;
+    }
+
+    body {
+        -ms-overflow-style: none;
+    }
+
 </style>
