@@ -97,6 +97,16 @@
         // border-color: white;
     }
 
+    .btn.black {
+        color: black;
+        border-color: black;
+    }
+
+    .btn.black:hover {
+        color: #949494;
+        border-color: #949494;
+    }
+
     // Defaults
     .center {
         text-align: center;

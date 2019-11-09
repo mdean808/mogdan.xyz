@@ -18,7 +18,7 @@
             <div class="next">
                 <div data-aos="fade">
                     <h1>Student Corner</h1>
-                    <p>Student Corner makes project based learning easy.</p>
+                    <p>Student Corner makes project-based learning easy.</p>
                     <img class="screenshot" src="../assets/sc.png" alt="sc-screenshot">
                     <br>
                     <br>
@@ -34,7 +34,30 @@
                 </div>
             </div>
             <div class="bottom">
-                <a class="btn">Contact</a>
+                <a class="btn" href="mailto:morgandeanhi@gmail.com">Contact</a>
+            </div>
+        </div>
+        <div class="section other" style="background: white; height: 100vh">
+            <h1 style="color: black; padding: 10px">Other Projects</h1>
+            <div>
+                <a class="btn black" target="_blank" href="https://swoopit.xyz">SwoopIt</a>
+                <p style="color: #1daeef">A food delivery service for boarding schools with a day student population. Day students deliver food and receive a commission.</p>
+            </div>
+            <div>
+                <a class="btn black" target="_blank" href="https://vaststorytelling.com/">V A S T Storytelling</a>
+                <p style="color: #242943">A website for Hawaii Preparatory Academy's Digital Journalism Class content.</p>
+            </div>
+            <div>
+                <a class="btn black" target="_blank" href="https://cc21.mogdan.xyz">Holiday Vault</a>
+                <p style="color: #de2727">A website for storing holiday ideas, built for a contest with a holiday theme.</p>
+            </div>
+            <div>
+                <a class="btn black" target="_blank" href="https://tutorialdb.mogdan.xyz">TutorialDB</a>
+                <p style="color: #26a1da">A website built for the collection of tutorials. Its aim is to make obscure tutorials easier to find.</p>
+            </div>
+            <div>
+                <a class="btn black" target="_blank" href="https://repo.mogdan.xyz">Jailbreak Twekas</a>
+                <p style="color: #6d0f35">All of my <a href="https://en.wikipedia.org/wiki/IOS_jailbreaking" style="color: blue">jailbreak</a> tweaks in one place.</p>
             </div>
         </div>
     </div>
@@ -64,7 +87,19 @@
         transition: .4s all;
     }
 
+    .other div {
+        padding: 10px;
+        margin: auto;
+        max-width: 650px;
+    }
 
+    .other p {
+        font-size: 17px;
+    }
+
+    .section {
+        height: 95.5vh;
+    }
     .bottom {
         bottom: 30px;
         position: absolute;
