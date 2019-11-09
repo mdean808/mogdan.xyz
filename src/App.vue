@@ -15,19 +15,6 @@
         }
     }
 
-    @font-face {
-        font-family: 'Painting With Chocolate Regular';
-        src: local('Painting With Chocolate Regular'), url('/assets/Painting_With_Chocolate.woff') format('woff');
-    }
-
-    .choc {
-        font-family: "Painting With Chocolate Regular", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 56px;
-        text-decoration: none;
-        margin: -15px 0 0;
-    }
 
 
     #nav {
