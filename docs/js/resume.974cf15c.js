@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["resume"],{"1ba2":function(e,a,n){"use strict";n.r(a);var t=n("7a23"),c=Object(t["E"])("data-v-397a4b04");Object(t["s"])("data-v-397a4b04");var b=Object(t["g"])("iframe",{class:"w-full h-full",src:"/Morgan_Dean_Resume_Jan_2021.pdf"},null,-1);Object(t["q"])();var r=c((function(e,a,n,c,r,s){return Object(t["p"])(),Object(t["e"])("div",null,[b])})),s=Object(t["h"])({name:"Resume"});s.render=r,s.__scopeId="data-v-397a4b04";a["default"]=s}}]);
+//# sourceMappingURL=resume.974cf15c.js.map

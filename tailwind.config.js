@@ -1,11 +1,19 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-}
+    purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+    darkMode: 'media', // or 'media' or 'class'
+    theme: {
+        extend: {
+            inset: {
+                '1/6': '16.666667%'
+            },
+
+            height: {
+                '11/12': '91.666667%'
+            }
+        }
+    },
+    variants: {
+        extend: {}
+    },
+    plugins: []
+};

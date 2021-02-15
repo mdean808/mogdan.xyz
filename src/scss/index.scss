@@ -1,0 +1,50 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Manrope;
+        src: url('~@/assets/fonts/Manrope.ttf') format("truetype");
+    }
+    @font-face {
+        font-family: Roboto Slab;
+        src: url('~@/assets/fonts/RobotoSlab.ttf') format("truetype");
+    }
+    h1 {
+        @apply text-5xl;
+        font-family: 'Roboto Slab', sans-serif;
+    }
+    h2 {
+        @apply text-4xl;
+        font-family: 'Roboto Slab', sans-serif;
+
+    }
+    h3 {
+        @apply text-3xl;
+        font-family: 'Roboto Slab', sans-serif;
+
+    }
+    h4 {
+        @apply text-2xl;
+        font-family: 'Roboto Slab', sans-serif;
+
+    }
+    h5 {
+        @apply text-xl;
+        font-family: 'Roboto Slab', sans-serif;
+
+    }
+    * {
+        font-family: 'Manrope', sans-serif;
+    }
+    a {
+        font-family: 'Roboto Slab', sans-serif;
+        @apply text-purple-500;
+        &:hover {
+            @apply underline;
+            text-decoration-color: currentColor;
+        }
+    }
+}
