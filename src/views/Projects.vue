@@ -3,39 +3,39 @@
         <div class="py-3">
             <h2>Programming Projects</h2>
             <hr>
-            <ul class="list-disc list-inside text-gray-500 ml-2">
+            <ul class="list-disc list-inside text-gray-500 ml-2 transition duration-150">
                 <li>
                     <a href="https://studentcorner.io" target="_blank">Student Corner</a>
-                    <div class="pl-10 text-gray-700"><p>An award winning service dedicated to improving the project-based learning process.  Has over 6 thousand registered users and over four thousand projects created.</p>
-                        <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider">Vue.js, Node.js, MongoDb, devops, design</span>
+                    <div class="pl-10 text-gray-700 transition duration-150"><p>An award winning service dedicated to improving the project-based learning process.  Has over 6 thousand registered users and over four thousand projects created.</p>
+                        <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">Vue.js, Node.js, MongoDb, devops, design</span>
                     </div>
                 </li>
                 <li>
                     <a href="https://github.com/mdean808/braindash-app" target="_blank">Media Manager</a>
-                    <div class="pl-10 text-gray-700"><p>A cross-platform desktop application for organizing music libraries. Supports recursive organization, duplicate detection, and more.</p>
-                        <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider">electron, node.js, materialize.css</span></div>
+                    <div class="pl-10 text-gray-700 transition duration-150"><p>A cross-platform desktop application for organizing music libraries. Supports recursive organization, duplicate detection, and more.</p>
+                        <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">electron, node.js, materialize.css</span></div>
                 </li>
                 <li>
                     <a href="https://github.com/mdean808/braindash-app" target="_blank">Tweak Manager</a>
-                    <div class="pl-10 text-gray-700"><p>An iOS app built to help users manage <a href="https://en.wikipedia.org/wiki/IOS_jailbreaking" target="_blank"> jailbreak tweaks</a> by enabling and disabling them using system calls..</p>
-                        <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider">Objective C Logos</span>
+                    <div class="pl-10 text-gray-700 transition duration-150"><p>An iOS app built to help users manage <a href="https://en.wikipedia.org/wiki/IOS_jailbreaking" target="_blank"> jailbreak tweaks</a> by enabling and disabling them using system calls..</p>
+                        <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">Objective C Logos</span>
                     </div>
                 </li>
                 <li>
                     <a href="https://tutorialdb.mogdan.xyz/" target="_blank">TutorialDB</a>
-                    <div class="pl-10 text-gray-700"><p>A website for submitting and browsing useful tutorials.</p>
-                        <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider">MongoDB materialize.css heroku Node.js</span>
+                    <div class="pl-10 text-gray-700 transition duration-150"><p>A website for submitting and browsing useful tutorials.</p>
+                        <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">MongoDB materialize.css heroku Node.js</span>
                     </div>
                 </li>
                 <li>
                     <a href="https://github.com/mdean808/braindash-app" target="_blank">Braindash</a>
-                    <div class="pl-10 text-gray-700"><p>An iOS companion app to the board game <a
+                    <div class="pl-10 text-gray-700 transition duration-150"><p>An iOS companion app to the board game <a
                         href="https://en.wikipedia.org/wiki/Balderdash" target="_blank">balderdash</a>. Designed to make it easy to keep track of score and game state.</p>
-                        <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider">Swift Websockets Node.js</span>
+                        <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">Swift Websockets Node.js</span>
                     </div>
                 </li>
             </ul>
-            <div class="absolute bottom-12 text-gray-500 text-sm">
+            <div class="absolute bottom-12 text-gray-500 text-sm transition duration-150">
                 <p>(this website was made using vue.js, tailwindcss, and hosted on <a href="https://github.com/mdean808/mogdan.xyz">github</a>)</p>
             </div>
         </div>

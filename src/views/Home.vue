@@ -1,6 +1,6 @@
 <template>
     <div class="mx-auto px-5 lg:px-0">
-        <h2 class="dark:text-gray-100">Hey!</h2>
+        <h2 class="dark:text-gray-100 transition duration-150">Hey!</h2>
         <p class="py-1">Welcome to my website! I'm Morgan Dean, a {{ yearsOld }} year old developer from the Big Island of
             Hawaii.</p>
         <p class="py-1">I enjoy biking, camping, backpacking, reading,
