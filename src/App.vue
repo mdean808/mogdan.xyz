@@ -1,32 +1,92 @@
 <template>
     <div :class="{dark: darkMode}">
         <nav
-            class="flex-row justify-between py-2 bg-purple-400 dark:bg-purple-500 transition duration-150 h-full fixed w-1/6 top-0 left-0 overflow-x-hidden">
-            <div class="flex flex-row justify-center">
-                <router-link to="/" class="text-white dark:text-gray-100 transition duration-150"><h3 class="dark:text-gray-100 transition duration-150">Morgan
+            class="flex-row justify-between py-2 px-2 bg-purple-400 dark:bg-purple-500 transition duration-150 h-full fixed w-1/6 top-0 left-0 overflow-x-hidden">
+            <svg
+                class=" lg:hidden mx-auto px-3 -mt-2 w-full h-12 text-center dark:text-gray-100 text-white cursor-pointer"
+                @click="mobileMenu = !mobileMenu;" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                      clip-rule="evenodd"></path>
+            </svg>
+            <div class="lg:block hidden rotate-90 h-20 w-20 bg-no-repeat rounded-full bg-center bg-cover mx-auto"
+                 style="background-image: url('/img/me.jpg')"></div>
+            <div class="lg:block hidden flex flex-row justify-center">
+                <router-link to="/" class="text-white dark:text-gray-100 transition duration-150 text-center"><h3
+                    class="dark:text-gray-100 transition duration-150">Morgan
                     Dean</h3></router-link>
             </div>
 
-            <ul class="flex flex-col text-center mx-auto mt-3">
+            <ul class="lg:block hidden flex flex-col text-center mx-auto mt-3">
                 <li class="p-2">
-                    <router-link to="/projects" class="text-white dark:text-gray-100 transition duration-150">projects</router-link>
+                    <router-link to="/projects" class="text-white dark:text-gray-100 transition duration-150">projects
+                    </router-link>
                 </li>
                 <li class="p-2">
-                    <router-link to="/resume" class="text-white dark:text-gray-100 transition duration-150">resume</router-link>
+                    <router-link to="/resume" class="text-white dark:text-gray-100 transition duration-150">resume
+                    </router-link>
                 </li>
                 <li class="p-2">
-                    <a href="https://repo.mogdan.xyz" target="_blank" class="text-white dark:text-gray-100 transition duration-150">jailbreak
+                    <a href="https://repo.mogdan.xyz" target="_blank"
+                       class="text-white dark:text-gray-100 transition duration-150">jailbreak
                         repository</a>
                 </li>
             </ul>
-            <div class="fixed bottom-6 left-0 w-1/6">
+            <div class="lg:block hidden fixed bottom-6 left-0 w-1/6">
                 <div class="text-center mx-auto w-full">
-                    <a href="mailto:morgan@mogdan.xyz" target="_blank" class="block text-white dark:text-gray-100 transition duration-150">morgan@mogdan.xyz</a>
-                    <a href="tel:+18086401099" class="block text-white dark:text-gray-100 transition duration-150">1 (808) 640-1099</a>
+                    <a href="mailto:morgan@mogdan.xyz" target="_blank"
+                       class="block text-white dark:text-gray-100 transition duration-150">morgan@mogdan.xyz</a>
+                    <a href="tel:+18086401099" class="block text-white dark:text-gray-100 transition duration-150">1
+                        (808) 640-1099</a>
                 </div>
             </div>
         </nav>
-        <div class="bg-white dark:bg-gray-600 pt-4 px-2 h-full w-5/6 absolute top-0 left-1/6 overflow-x-hidden transition duration-150">
+        <transition name="slide">
+            <div
+                class="lg:hidden flex justify-between transition duration-150 h-full fixed w-full top-12 left-0 overflow-x-hidden z-50"
+                v-if="mobileMenu">
+                <div class=" py-2 w-2/3 bg-purple-400 dark:bg-purple-500 transition duration-150">
+                    <div class="rotate-90 h-20 w-20 bg-no-repeat rounded-full bg-center bg-cover mx-auto block"
+                         style="background-image: url('/img/me.jpg')"></div>
+                    <router-link to="/" class="text-white dark:text-gray-100 transition duration-150 block text-center">
+                        <h3
+                            class="dark:text-gray-100 transition duration-150">Morgan
+                            Dean</h3></router-link>
+                    <ul class="flex flex-col text-center mx-auto mt-3">
+                        <li class="p-2">
+                            <router-link to="/projects" class="text-white dark:text-gray-100 transition duration-150">
+                                projects
+                            </router-link>
+                        </li>
+                        <li class="p-2">
+                            <router-link to="/resume" class="text-white dark:text-gray-100 transition duration-150">
+                                resume
+                            </router-link>
+                        </li>
+                        <li class="p-2">
+                            <a href="https://repo.mogdan.xyz" target="_blank"
+                               class="text-white dark:text-gray-100 transition duration-150">jailbreak
+                                repository</a>
+                        </li>
+                    </ul>
+                    <div class="fixed bottom-6 left-0 w-2/3">
+                        <div class="text-center mx-auto w-full">
+                            <a href="mailto:morgan@mogdan.xyz" target="_blank"
+                               class="block text-white dark:text-gray-100 transition duration-150">morgan@mogdan.xyz</a>
+                            <a href="tel:+18086401099"
+                               class="block text-white dark:text-gray-100 transition duration-150">1
+                                (808) 640-1099</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/3 opacity-60 bg-gray-800 transition duration-150" @click="mobileMenu = false;">
+                </div>
+            </div>
+        </transition>
+        <div
+            class="bg-white dark:bg-gray-600 pt-4 pl-3 pr-2 h-full w-5/6 absolute top-0 left-1/6 overflow-x-hidden transition duration-150"
+            @click="mobileMenu = false">
             <div v-for="(crumb, i) of breadcrumbs" class="inline" :key="crumb.url">
                 <router-link
                     class=" transition duration-150"
@@ -34,7 +94,7 @@
                     :to="crumb.url">/{{ crumb.name }}
                 </router-link>
             </div>
-            <router-view class="pt-4 h-11/12" v-slot="{ Component }">
+            <router-view class="mt-1 h-11/12 overflow-auto" v-slot="{ Component }">
                 <transition
                     name="fade"
                     mode="out-in"
@@ -42,13 +102,13 @@
                     <component :is="Component"/>
                 </transition>
             </router-view>
-            <div class="fixed left-1/6 w-5/6 bottom-0 py-2 px-2">
-                <p class="float-left dark:text-white mt-5 transition duration-150">© 2021 Morgan Dean</p>
-                <div class="float-right">
+            <div class="fixed left-1/6 w-5/6 -bottom-2 pb-4 pt-1 lg:py-2 px-2 bg-gray-300 dark:bg-gray-700 transition duration-150">
+                <p class="lg:float-left dark:text-white lg:mt-5 transition duration-150">© 2021 Morgan Dean</p>
+                <div class="lg:float-right lg:-mr-2.5 ml-2 lg:ml-0">
                     <tool-tip text="github/mdean808" left="-12%">
                         <a href="https://github.com/mdean808" target="_blank" title="github/mdean808">
                             <svg
-                                class="-ml-2.5 fill-current inline hover:bg-gray-800 hover:border-gray-800 hover:text-white bg-white dark:hover:bg-white dark:hover:border-gray-800 dark:hover:text-gray-800 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
+                                class="-ml-2.5 fill-current inline hover:bg-gray-800 hover:border-gray-800 hover:text-white bg-gray-300 dark:hover:bg-white dark:hover:border-gray-800 dark:hover:text-gray-800 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
                                 data-donate="true" data-tag="git" data-name="Github" viewBox="0 0 512 512"
                                 preserveAspectRatio="xMidYMid meet">
                                 <path
@@ -88,7 +148,7 @@
                         <a href="https://www.linkedin.com/in/morgan-dean-251467168/" target="_blank"
                            title="linkedin/morgan-dean">
                             <svg
-                                class="linkedin inline fill-current hover:text-white bg-white dark:hover:bg-white dark:hover:border-blue-800 dark:hover:text-blue-800 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
+                                class="linkedin inline fill-current hover:text-white bg-gray-300 dark:hover:bg-white dark:hover:border-blue-800 dark:hover:text-blue-800 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
                                 data-donate="true" data-tag="lin" data-name="LinkedIn" viewBox="0 0 512 512"
                                 preserveAspectRatio="xMidYMid meet">
                                 <path
@@ -100,7 +160,7 @@
                         <a href="https://open.spotify.com/user/unicorn%7C808?si=81T8kSMAQl-Dg2o77zcWmQ" target="_blank"
                            title="spotify/morganatic">
                             <svg
-                                class="fill-current inline hover:bg-green-500 hover:border-green-500 hover:text-white bg-white dark:hover:bg-white dark:hover:border-green-500 dark:hover:text-green-500 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
+                                class="fill-current inline hover:bg-green-500 hover:border-green-500 hover:text-white bg-gray-300 dark:hover:bg-white dark:hover:border-green-500 dark:hover:text-green-500 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
                                 data-donate="true" data-tag="spo" data-name="Spotify" viewBox="0 0 512 512"
                                 preserveAspectRatio="xMidYMid meet">
                                 <path
@@ -111,12 +171,15 @@
                 </div>
             </div>
         </div>
-        <div class="absolute right-3 top-3 hover:bg-gray-700 dark:hover:bg-white dark:hover:text-gray-700 hover:text-white text-gray-700 dark:text-white border-gray-700 dark:border-white border-2 rounded-md cursor-pointer transition duration-150" @click="changeDarkMode">
-            <svg v-if="!darkMode" class="w-8 h-8 transition-none" fill="currentColor" viewBox="0 0 20 20"
+        <div
+            class="absolute right-1 top-1 hover:bg-gray-700 dark:hover:bg-white dark:hover:text-gray-700 hover:text-white text-gray-700 dark:text-white border-gray-700 dark:border-white border-2 rounded-md cursor-pointer transition duration-150"
+            @click="changeDarkMode">
+            <svg v-if="!darkMode" class="w-6 h-6 transition-none" fill="currentColor" viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
             </svg>
-            <svg v-else class="w-8 h-8 transition-none" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <svg v-else class="w-6 h-6 transition-none" fill="currentColor" viewBox="0 0 20 20"
+                 xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd"
                       d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
                       clip-rule="evenodd"></path>
@@ -136,7 +199,8 @@ export default defineComponent({
         return {
             breadcrumbs: [],
             pageTransition: 'fade',
-            darkMode: false
+            darkMode: false,
+            mobileMenu: false
         };
     },
     watch: {
@@ -152,11 +216,13 @@ export default defineComponent({
     },
     methods: {
         changeDarkMode() {
-            this.darkMode = !this.darkMode; localStorage.setItem('darkMode', this.darkMode.toString());
+            this.darkMode = !this.darkMode;
+            localStorage.setItem('darkMode', this.darkMode.toString());
         }
     },
     created() {
         this.$router.beforeEach((to, from, next) => {
+            this.mobileMenu = false;
             if (to.name === 'Home') {
                 this.pageTransition = 'slide-left';
             } else if (from.name === 'Home') {
@@ -180,17 +246,25 @@ export default defineComponent({
 });
 </script>
 <style lang="scss">
-.fade-enter-active,
-.fade-leave-active {
-    transition-duration: 0.3s;
-    transition-property: opacity, height;
-    transition-timing-function: ease;
-    overflow: hidden;
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s ease;
 }
 
-.fade-enter,
-.fade-leave-active {
-    opacity: 0
+.fade-enter-from, .fade-leave-to {
+    opacity: 0;
+}
+
+.slide-leave-enter {
+    transform: translateX(0);
+    transition: all .2s linear;
+}
+
+.slide-enter-active {
+    transform: translateX(-100%);
+}
+
+.slide-leave-to {
+    transform: translateX(-100%);
 }
 
 .instagram:hover {

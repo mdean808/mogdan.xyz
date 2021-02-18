@@ -14,7 +14,26 @@
     }
     * {
         font-family: 'Manrope', sans-serif;
+
     }
+    *::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    *::-webkit-scrollbar {
+        width: 12px;
+        background-color: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: theme('colors.gray.300');
+        border: 2px solid white;
+        &:hover {
+            background-color: theme('colors.gray.400');
+
+        }
+    }
+
     h1 {
         @apply text-5xl;
         @apply dark:text-gray-100;

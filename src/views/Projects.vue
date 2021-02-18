@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="py-3">
-            <h2>Programming Projects</h2>
+            <h2>Programming</h2>
             <hr>
             <ul class="list-disc list-inside text-gray-500 ml-2 transition duration-150">
                 <li>
@@ -16,14 +16,14 @@
                         <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">electron, node.js, materialize.css</span></div>
                 </li>
                 <li>
-                    <a href="https://github.com/mdean808/braindash-app" target="_blank">Tweak Manager</a>
+                    <a href="https://repo.mogdan.xyz/web/xyz.mogdan.tweakmanager/" target="_blank">Tweak Manager</a>
                     <div class="pl-10 text-gray-700 transition duration-150"><p>An iOS app built to help users manage <a href="https://en.wikipedia.org/wiki/IOS_jailbreaking" target="_blank"> jailbreak tweaks</a> by enabling and disabling them using system calls..</p>
                         <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">Objective C Logos</span>
                     </div>
                 </li>
                 <li>
                     <a href="https://tutorialdb.mogdan.xyz/" target="_blank">TutorialDB</a>
-                    <div class="pl-10 text-gray-700 transition duration-150"><p>A website for submitting and browsing useful tutorials.</p>
+                    <div class="pl-10 text-gray-700 transition duration-150"><p>A website for submitting and browsing useful tutorials. (May take a few seconds to load)</p>
                         <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">MongoDB materialize.css heroku Node.js</span>
                     </div>
                 </li>
@@ -34,9 +34,12 @@
                         <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">Swift Websockets Node.js</span>
                     </div>
                 </li>
+                <li class="mt-3">
+                    <span class="text-gray-700 italic dark:text-white">Looking for more? Visit my <a target="_blank" href="https://github.com/mdean808">Github</a>.</span>
+                </li>
             </ul>
-            <div class="absolute bottom-12 text-gray-500 text-sm transition duration-150">
-                <p>(this website was made using vue.js, tailwindcss, and hosted on <a href="https://github.com/mdean808/mogdan.xyz">github</a>)</p>
+            <div class="absolute bottom-16 text-gray-500 text-sm transition duration-150 hidden lg:block">
+                <p>(this website was made using vue.js, tailwindcss, and hosted on <a target="" href="https://github.com/mdean808/mogdan.xyz">github</a>)</p>
             </div>
         </div>
     </div>

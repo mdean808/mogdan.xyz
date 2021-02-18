@@ -1,6 +1,9 @@
 <template>
     <div>
-        <iframe class="w-full h-full" src="/Morgan_Dean_Resume_Jan_2021.pdf"></iframe>
+        <a href="/Morgan_Dean_Resume_Jan_20201.pdf">(download)</a>
+        <object type="application/pdf" class="w-full h-full" data="/Morgan_Dean_Resume_Jan_2021.pdf">
+            <p>Your browser doesn't support PDF viewers. Please download above.</p>
+        </object>
     </div>
 </template>
 
