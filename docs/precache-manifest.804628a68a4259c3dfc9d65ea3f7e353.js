@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Morgan_Dean_Resume_Jan_2021.pdf"
   },
   {
-    "revision": "9fe7ab1a0f92c71101ab",
-    "url": "/css/app.7f48f2bb.css"
+    "revision": "dd68df36a2599dc86ba6",
+    "url": "/css/app.383c4161.css"
   },
   {
     "revision": "74b339d69d34ba83a360caa87058099b",
@@ -20,12 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/me.jpg"
   },
   {
-    "revision": "c8210e1682b5a08ee3da85d0bb20dbb9",
+    "revision": "60285af376bdf59b26c38d3cc2ccf311",
     "url": "/index.html"
   },
   {
-    "revision": "9fe7ab1a0f92c71101ab",
-    "url": "/js/app.2e32f6d2.js"
+    "revision": "dd68df36a2599dc86ba6",
+    "url": "/js/app.13b046f4.js"
   },
   {
     "revision": "97b25d30d5155054dc38",
