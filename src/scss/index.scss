@@ -21,13 +21,12 @@
     }
 
     *::-webkit-scrollbar {
-        width: 12px;
+        width: 8px;
         background-color: transparent;
     }
 
     *::-webkit-scrollbar-thumb {
         background-color: theme('colors.gray.300');
-        border: 2px solid white;
         &:hover {
             background-color: theme('colors.gray.400');
 

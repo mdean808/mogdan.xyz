@@ -1,7 +1,7 @@
 <template>
     <div :class="{dark: darkMode}">
         <nav
-            class="flex-row justify-between py-2 px-2 bg-purple-400 dark:bg-purple-500 transition duration-150 h-full fixed w-1/6 top-0 left-0 overflow-x-hidden">
+            class="flex-row justify-between py-2 px-2 bg-purple-400 dark:bg-[#8973cd] transition duration-150 h-full fixed w-1/6 top-0 left-0 overflow-x-hidden">
             <svg
                 class=" lg:hidden mx-auto px-3 -mt-2 w-full h-12 text-center dark:text-gray-100 text-white cursor-pointer"
                 @click="mobileMenu = !mobileMenu;" fill="currentColor" viewBox="0 0 20 20"
@@ -10,8 +10,8 @@
                       d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                       clip-rule="evenodd"></path>
             </svg>
-            <div class="lg:block hidden rotate-90 h-20 w-20 bg-no-repeat rounded-full bg-center bg-cover mx-auto"
-                 style="background-image: url('/img/me.jpg')"></div>
+<!--            <div class="lg:block hidden rotate-90 h-20 w-20 bg-no-repeat rounded-full bg-center bg-cover mx-auto"
+                 style="background-image: url('/img/me.jpg')"></div>-->
             <div class="lg:block hidden flex flex-row justify-center">
                 <router-link to="/" class="text-white dark:text-gray-100 transition duration-150 text-center"><h3
                     class="dark:text-gray-100 transition duration-150">Morgan
@@ -37,8 +37,8 @@
                 <div class="text-center mx-auto w-full">
                     <a href="mailto:morgan@mogdan.xyz" target="_blank"
                        class="block text-white dark:text-gray-100 transition duration-150">morgan@mogdan.xyz</a>
-                    <a href="tel:+18086401099" class="block text-white dark:text-gray-100 transition duration-150">1
-                        (808) 640-1099</a>
+<!--                    <a href="tel:+18086401099" class="block text-white dark:text-gray-100 transition duration-150">1
+                        (808) 640-1099</a>-->
                 </div>
             </div>
         </nav>
@@ -46,9 +46,9 @@
             <div
                 class="lg:hidden flex justify-between transition duration-150 h-full fixed w-full top-12 left-0 overflow-x-hidden z-50"
                 v-if="mobileMenu">
-                <div class=" py-2 w-2/3 bg-purple-400 dark:bg-purple-500 transition duration-150">
-                    <div class="rotate-90 h-20 w-20 bg-no-repeat rounded-full bg-center bg-cover mx-auto block"
-                         style="background-image: url('/img/me.jpg')"></div>
+                <div class=" py-2 w-2/3 bg-purple-400 dark:bg-[#8973cd] transition duration-150">
+<!--                    <div class="rotate-90 h-20 w-20 bg-no-repeat rounded-full bg-center bg-cover mx-auto block"
+                         style="background-image: url('/img/me.jpg')"></div>-->
                     <router-link to="/" class="text-white dark:text-gray-100 transition duration-150 block text-center">
                         <h3
                             class="dark:text-gray-100 transition duration-150">Morgan
@@ -74,9 +74,9 @@
                         <div class="text-center mx-auto w-full">
                             <a href="mailto:morgan@mogdan.xyz" target="_blank"
                                class="block text-white dark:text-gray-100 transition duration-150">morgan@mogdan.xyz</a>
-                            <a href="tel:+18086401099"
+<!--                            <a href="tel:+18086401099"
                                class="block text-white dark:text-gray-100 transition duration-150">1
-                                (808) 640-1099</a>
+                                (808) 640-1099</a>-->
                         </div>
                     </div>
                 </div>
@@ -102,13 +102,13 @@
                     <component :is="Component"/>
                 </transition>
             </router-view>
-            <div class="fixed left-1/6 w-5/6 -bottom-2 pb-4 pt-1 lg:py-2 px-2 bg-gray-300 dark:bg-gray-700 transition duration-150">
+            <div class="fixed left-1/6 w-5/6 -bottom-2 pb-4 pt-1 lg:py-2 px-2 bg-gray-200 dark:bg-gray-700 transition duration-150">
                 <p class="lg:float-left dark:text-white lg:mt-5 transition duration-150">© 2021 Morgan Dean</p>
                 <div class="lg:float-right lg:-mr-2.5 ml-2 lg:ml-0">
                     <tool-tip text="github/mdean808" left="-12%">
                         <a href="https://github.com/mdean808" target="_blank" title="github/mdean808">
                             <svg
-                                class="-ml-2.5 fill-current inline hover:bg-gray-800 hover:border-gray-800 hover:text-white bg-gray-300 dark:hover:bg-white dark:hover:border-gray-800 dark:hover:text-gray-800 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
+                                class="-ml-2.5 fill-current inline hover:bg-gray-800 hover:border-gray-800 hover:text-white bg-gray-200 dark:hover:bg-white dark:hover:border-gray-800 dark:hover:text-gray-800 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
                                 data-donate="true" data-tag="git" data-name="Github" viewBox="0 0 512 512"
                                 preserveAspectRatio="xMidYMid meet">
                                 <path
@@ -148,7 +148,7 @@
                         <a href="https://www.linkedin.com/in/morgan-dean-251467168/" target="_blank"
                            title="linkedin/morgan-dean">
                             <svg
-                                class="linkedin inline fill-current hover:text-white bg-gray-300 dark:hover:bg-white dark:hover:border-blue-800 dark:hover:text-blue-800 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
+                                class="linkedin inline fill-current hover:text-white bg-gray-200 dark:hover:bg-white dark:hover:border-blue-800 dark:hover:text-blue-800 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
                                 data-donate="true" data-tag="lin" data-name="LinkedIn" viewBox="0 0 512 512"
                                 preserveAspectRatio="xMidYMid meet">
                                 <path
@@ -160,7 +160,7 @@
                         <a href="https://open.spotify.com/user/unicorn%7C808?si=81T8kSMAQl-Dg2o77zcWmQ" target="_blank"
                            title="spotify/morganatic">
                             <svg
-                                class="fill-current inline hover:bg-green-500 hover:border-green-500 hover:text-white bg-gray-300 dark:hover:bg-white dark:hover:border-green-500 dark:hover:text-green-500 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
+                                class="fill-current inline hover:bg-green-500 hover:border-green-500 hover:text-white bg-gray-200 dark:hover:bg-white dark:hover:border-green-500 dark:hover:text-green-500 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
                                 data-donate="true" data-tag="spo" data-name="Spotify" viewBox="0 0 512 512"
                                 preserveAspectRatio="xMidYMid meet">
                                 <path
