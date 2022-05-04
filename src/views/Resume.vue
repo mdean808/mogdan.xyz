@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="overflow-y-hidden">
         <a href="/Morgan_Dean_Resume_Jan_20201.pdf">(download)</a>
-        <object type="application/pdf" class="w-full h-full" data="/Morgan_Dean_Resume_Jan_2021.pdf">
+        <object type="application/pdf" class="w-full h-11/12 pr-2" data="/Morgan_Dean_Resume_Jan_2021.pdf">
             <p>Your browser doesn't support PDF viewers. Please download above.</p>
         </object>
     </div>
