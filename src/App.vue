@@ -10,21 +10,27 @@
                       d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                       clip-rule="evenodd"></path>
             </svg>
-<!--            <div class="lg:block hidden rotate-90 h-20 w-20 bg-no-repeat rounded-full bg-center bg-cover mx-auto"
-                 style="background-image: url('/img/me.jpg')"></div>-->
+            <!--            <div class="lg:block hidden rotate-90 h-20 w-20 bg-no-repeat rounded-full bg-center bg-cover mx-auto"
+                             style="background-image: url('/img/me.jpg')"></div>-->
             <div class="lg:block hidden flex flex-row justify-center">
-                <router-link to="/" class="text-white dark:text-gray-100 transition duration-150 text-center"><h3
-                    class="dark:text-gray-100 transition duration-150">Morgan
-                    Dean</h3></router-link>
+                <router-link to="/"
+                             class="text-white dark:text-gray-100 transition duration-150 text-center">
+                    <h3
+                        class="dark:text-gray-100 transition duration-150">Morgan
+                        Dean</h3></router-link>
             </div>
 
             <ul class="lg:block hidden flex flex-col text-center mx-auto mt-3">
                 <li class="p-2">
-                    <router-link to="/projects" class="text-white dark:text-gray-100 transition duration-150">projects
+                    <router-link to="/projects"
+                                 class="text-white dark:text-gray-100 transition duration-150">
+                        projects
                     </router-link>
                 </li>
                 <li class="p-2">
-                    <router-link to="/resume" class="text-white dark:text-gray-100 transition duration-150">resume
+                    <router-link to="/resume"
+                                 class="text-white dark:text-gray-100 transition duration-150">
+                        resume
                     </router-link>
                 </li>
                 <li class="p-2">
@@ -37,8 +43,8 @@
                 <div class="text-center mx-auto w-full">
                     <a href="mailto:morgan@mogdan.xyz" target="_blank"
                        class="block text-white dark:text-gray-100 transition duration-150">morgan@mogdan.xyz</a>
-<!--                    <a href="tel:+18086401099" class="block text-white dark:text-gray-100 transition duration-150">1
-                        (808) 640-1099</a>-->
+                    <!--                    <a href="tel:+18086401099" class="block text-white dark:text-gray-100 transition duration-150">1
+                                            (808) 640-1099</a>-->
                 </div>
             </div>
         </nav>
@@ -47,20 +53,23 @@
                 class="lg:hidden flex justify-between transition duration-150 h-full fixed w-full top-12 left-0 overflow-x-hidden z-50"
                 v-if="mobileMenu">
                 <div class=" py-2 w-2/3 bg-purple-400 dark:bg-[#8973cd] transition duration-150">
-<!--                    <div class="rotate-90 h-20 w-20 bg-no-repeat rounded-full bg-center bg-cover mx-auto block"
-                         style="background-image: url('/img/me.jpg')"></div>-->
-                    <router-link to="/" class="text-white dark:text-gray-100 transition duration-150 block text-center">
+                    <!--                    <div class="rotate-90 h-20 w-20 bg-no-repeat rounded-full bg-center bg-cover mx-auto block"
+                                             style="background-image: url('/img/me.jpg')"></div>-->
+                    <router-link to="/"
+                                 class="text-white dark:text-gray-100 transition duration-150 block text-center">
                         <h3
                             class="dark:text-gray-100 transition duration-150">Morgan
                             Dean</h3></router-link>
                     <ul class="flex flex-col text-center mx-auto mt-3">
                         <li class="p-2">
-                            <router-link to="/projects" class="text-white dark:text-gray-100 transition duration-150">
+                            <router-link to="/projects"
+                                         class="text-white dark:text-gray-100 transition duration-150">
                                 projects
                             </router-link>
                         </li>
                         <li class="p-2">
-                            <router-link to="/resume" class="text-white dark:text-gray-100 transition duration-150">
+                            <router-link to="/resume"
+                                         class="text-white dark:text-gray-100 transition duration-150">
                                 resume
                             </router-link>
                         </li>
@@ -74,27 +83,30 @@
                         <div class="text-center mx-auto w-full">
                             <a href="mailto:morgan@mogdan.xyz" target="_blank"
                                class="block text-white dark:text-gray-100 transition duration-150">morgan@mogdan.xyz</a>
-<!--                            <a href="tel:+18086401099"
-                               class="block text-white dark:text-gray-100 transition duration-150">1
-                                (808) 640-1099</a>-->
+                            <!--                            <a href="tel:+18086401099"
+                                                           class="block text-white dark:text-gray-100 transition duration-150">1
+                                                            (808) 640-1099</a>-->
                         </div>
                     </div>
                 </div>
-                <div class="w-1/3 opacity-60 bg-gray-800 transition duration-150" @click="mobileMenu = false;">
+                <div class="w-1/3 opacity-60 bg-gray-800 transition duration-150"
+                     @click="mobileMenu = false;">
                 </div>
             </div>
         </transition>
         <div
-            class="bg-white dark:bg-gray-600 pt-4 pl-3 pr-2 h-full w-5/6 absolute top-0 left-1/6 overflow-x-hidden transition duration-150"
+            class="bg-white dark:bg-gray-600 pt-4 flex flex-col flex-nowrap h-full w-5/6 absolute top-0 left-1/6 overflow-x-hidden transition duration-150"
             @click="mobileMenu = false">
-            <div v-for="(crumb, i) of breadcrumbs" class="inline" :key="crumb.url">
-                <router-link
-                    class=" transition duration-150"
-                    :class="{'text-purple-500 dark:text-purple-300': i === breadcrumbs.length - 1, 'text-gray-600 dark:text-gray-200': i !== breadcrumbs.length - 1}"
-                    :to="crumb.url">/{{ crumb.name }}
-                </router-link>
+            <div class="shrink-0 pl-2">
+                <div v-for="(crumb, i) of breadcrumbs" class="inline" :key="crumb.url">
+                    <router-link
+                        class=" transition duration-150"
+                        :class="{'text-purple-500 dark:text-purple-300': i === breadcrumbs.length - 1, 'text-gray-600 dark:text-gray-200': i !== breadcrumbs.length - 1}"
+                        :to="crumb.url">/{{ crumb.name }}
+                    </router-link>
+                </div>
             </div>
-            <router-view class="mt-1 h-11/12 overflow-auto" v-slot="{ Component }">
+            <router-view class="h-full w-full overflow-auto pl-3 grow" v-slot="{ Component }">
                 <transition
                     name="fade"
                     mode="out-in"
@@ -102,14 +114,19 @@
                     <component :is="Component"/>
                 </transition>
             </router-view>
-            <div class="fixed left-1/6 w-5/6 -bottom-2 pb-4 pt-1 lg:py-2 px-2 bg-gray-200 dark:bg-gray-700 transition duration-150">
-                <p class="lg:float-left dark:text-white lg:mt-5 transition duration-150">© 2021 Morgan Dean</p>
-                <div class="lg:float-right lg:-mr-2.5 ml-2 lg:ml-0">
+
+            <div
+                class="shrink-0 flex left-1/6 w-5/6 pb-4 pt-1 bottom-0 lg:py-2 px-2 w-full bg-gray-200 dark:bg-gray-700 transition duration-150">
+                <p class="dark:text-white w-10/12 lg:pt-5 transition duration-150">© 2020 -
+                    {{ new Date().getFullYear() }} Morgan Dean</p>
+                <div class="lg:w-2/12 w-5/6 text-right">
                     <tool-tip text="github/mdean808" left="-12%">
-                        <a href="https://github.com/mdean808" target="_blank" title="github/mdean808">
+                        <a href="https://github.com/mdean808" target="_blank"
+                           title="github/mdean808">
                             <svg
                                 class="-ml-2.5 fill-current inline hover:bg-gray-800 hover:border-gray-800 hover:text-white bg-gray-200 dark:hover:bg-white dark:hover:border-gray-800 dark:hover:text-gray-800 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
-                                data-donate="true" data-tag="git" data-name="Github" viewBox="0 0 512 512"
+                                data-donate="true" data-tag="git" data-name="Github"
+                                viewBox="0 0 512 512"
                                 preserveAspectRatio="xMidYMid meet">
                                 <path
                                     d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path>
@@ -149,7 +166,8 @@
                            title="linkedin/morgan-dean">
                             <svg
                                 class="linkedin inline fill-current hover:text-white bg-gray-200 dark:hover:bg-white dark:hover:border-blue-800 dark:hover:text-blue-800 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
-                                data-donate="true" data-tag="lin" data-name="LinkedIn" viewBox="0 0 512 512"
+                                data-donate="true" data-tag="lin" data-name="LinkedIn"
+                                viewBox="0 0 512 512"
                                 preserveAspectRatio="xMidYMid meet">
                                 <path
                                     d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path>
@@ -157,11 +175,13 @@
                         </a>
                     </tool-tip>
                     <tool-tip text="spotify/morganatic" left="-100%" arrow-left="80%">
-                        <a href="https://open.spotify.com/user/unicorn%7C808?si=81T8kSMAQl-Dg2o77zcWmQ" target="_blank"
+                        <a href="https://open.spotify.com/user/unicorn%7C808?si=81T8kSMAQl-Dg2o77zcWmQ"
+                           target="_blank"
                            title="spotify/morganatic">
                             <svg
                                 class="fill-current inline hover:bg-green-500 hover:border-green-500 hover:text-white bg-gray-200 dark:hover:bg-white dark:hover:border-green-500 dark:hover:text-green-500 dark:bg-gray-600 text-purple-500 border-2 border-purple-500 dark:text-white dark:border-white rounded-md w-10 mr-2 cursor-pointer transition duration-150"
-                                data-donate="true" data-tag="spo" data-name="Spotify" viewBox="0 0 512 512"
+                                data-donate="true" data-tag="spo" data-name="Spotify"
+                                viewBox="0 0 512 512"
                                 preserveAspectRatio="xMidYMid meet">
                                 <path
                                     d="M256 78c-98.3 0-178 79.7-178 178 0 98.31 79.7 178 178 178 98.31 0 178-79.69 178-178 0-98.3-79.69-178-178-178zm81.63 256.73a11.09 11.09 0 0 1-15.26 3.68c-41.8-25.53-94.4-31.31-156.37-17.16a11.1 11.1 0 0 1-4.93-21.64c67.8-15.49 125.96-8.82 172.88 19.86a11.1 11.1 0 0 1 3.68 15.26zm21.79-48.47a13.88 13.88 0 0 1-19.1 4.57c-47.84-29.4-120.77-37.92-177.36-20.74a13.9 13.9 0 0 1-17.32-9.25 13.9 13.9 0 0 1 9.25-17.3c64.65-19.62 145.01-10.12 199.96 23.64a13.87 13.87 0 0 1 4.56 19.08zm1.87-50.47c-57.37-34.07-152.02-37.2-206.8-20.58a16.65 16.65 0 1 1-9.66-31.87c62.88-19.08 167.4-15.4 233.45 23.81a16.63 16.63 0 0 1 5.82 22.82 16.63 16.63 0 0 1-22.8 5.82h-.01z"></path>
@@ -174,7 +194,8 @@
         <div
             class="absolute right-1 top-1 hover:bg-gray-700 dark:hover:bg-white dark:hover:text-gray-700 hover:text-white text-gray-700 dark:text-white border-gray-700 dark:border-white border-2 rounded-md cursor-pointer transition duration-150"
             @click="changeDarkMode">
-            <svg v-if="!darkMode" class="w-6 h-6 transition-none" fill="currentColor" viewBox="0 0 20 20"
+            <svg v-if="!darkMode" class="w-6 h-6 transition-none" fill="currentColor"
+                 viewBox="0 0 20 20"
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
             </svg>

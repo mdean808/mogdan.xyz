@@ -1,9 +1,8 @@
 <template>
     <div>
-        <div class="py-3">
-            <h2>Programming</h2>
-            <hr>
-            <ul class="list-disc list-inside text-gray-500 ml-2 transition duration-150">
+        <div class="pb-3 flex relative flex-col flex-nowrap h-full">
+            <h2 class="shrink-0 py-3 border-b-2 dark:border-white border-black">Programming</h2>
+            <ul class="list-disc grow list-inside mt-1 text-gray-500 ml-2 transition duration-150">
                 <li>
                     <a href="https://studentcorner.io" target="_blank">Student Corner</a>
                     <div class="pl-10 text-gray-700 transition duration-150"><p>An award winning service dedicated to improving the project-based learning process.  Has over 6 thousand registered users and over four thousand projects created.</p>
@@ -40,13 +39,13 @@
                         <span class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">Swift, Websockets, Node.js</span>
                     </div>
                 </li>
-                <li class="mt-3">
+                <li>
+                    <span class="text-sm text-white">(this website was made using vue.js, tailwindcss, and hosted on <a target="" href="https://github.com/mdean808/mogdan.xyz">github</a>)</span>
+                </li>
+                <li class="mt-2">
                     <span class="text-gray-700 italic dark:text-white">Looking for more? Visit my <a target="_blank" href="https://github.com/mdean808">Github</a>.</span>
                 </li>
             </ul>
-            <div class="absolute bottom-16 text-gray-500 text-sm transition duration-150 hidden lg:block">
-                <p>(this website was made using vue.js, tailwindcss, and hosted on <a target="" href="https://github.com/mdean808/mogdan.xyz">github</a>)</p>
-            </div>
         </div>
     </div>
 </template>

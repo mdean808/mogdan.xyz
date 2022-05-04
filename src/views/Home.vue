@@ -1,6 +1,6 @@
 <template>
     <div class="flex mx-auto">
-        <div class="w-full max-w-6xl">
+        <div class="w-full text-left">
             <!--            <h2 class="dark:text-gray-100 transition duration-150">Hey!</h2>
                         <hr>-->
             <p class="py-1">I'm Morgan Dean, a {{ yearsOld }}-year-old developer from the Big

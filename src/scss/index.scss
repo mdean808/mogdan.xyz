@@ -12,6 +12,10 @@
         font-family: Roboto Slab;
         src: url('~@/assets/fonts/RobotoSlab.ttf') format("truetype");
     }
+    html, body {
+        height: 100%;
+        margin: 0
+    }
     * {
         font-family: 'Manrope', sans-serif;
 
