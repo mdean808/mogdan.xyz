@@ -4,12 +4,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BCVaccineProof.png"
   },
   {
+    "revision": "92b98e25cc3048430915e555c8aa580d",
+    "url": "/CNAME"
+  },
+  {
     "revision": "925e4ab73401e64c1c3c6a9a88a99636",
     "url": "/Morgan_Dean_Resume_Jan_2021.pdf"
   },
   {
-    "revision": "b6bb9484bbe2f51cc054",
-    "url": "/css/app.ce925ccb.css"
+    "revision": "eead0154f7eb3c63f655",
+    "url": "/css/app.a2b46427.css"
   },
   {
     "revision": "74b339d69d34ba83a360caa87058099b",
@@ -24,31 +28,31 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/me.jpg"
   },
   {
-    "revision": "e2e066346de1630f86a7eb45f2b15db8",
+    "revision": "01154e43d684e52fec2ec5a42c0d64de",
     "url": "/index.html"
   },
   {
-    "revision": "b6bb9484bbe2f51cc054",
-    "url": "/js/app.32508cf7.js"
+    "revision": "eead0154f7eb3c63f655",
+    "url": "/js/app.5bc16834.js"
   },
   {
     "revision": "f0076ac1209c759a36fb",
     "url": "/js/chunk-vendors.7e560d88.js"
   },
   {
-    "revision": "6894239f7a2e016dde78",
-    "url": "/js/projects.7a06604c.js"
+    "revision": "c934a7b6e6d89dd59bfd",
+    "url": "/js/projects.361470fd.js"
   },
   {
-    "revision": "c0d5c581d5da10c4f260",
-    "url": "/js/resume.a0d7c3ee.js"
+    "revision": "74da1ed171675d674579",
+    "url": "/js/resume.88053e5a.js"
   },
   {
-    "revision": "9589a9f3a759e8438339a19e3b966359",
+    "revision": "6fced49c34118d3dcfca895d28982e48",
     "url": "/manifest.json"
   },
   {
-    "revision": "735ab4f94fbcd57074377afca324c813",
+    "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
   }
 ]);
