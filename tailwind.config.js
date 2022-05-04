@@ -15,7 +15,7 @@ module.exports = {
             maxHeight: {
                 '11/12': '91.666667%'
             }
-        },
+        }
     },
     variants: {
         extend: {}
