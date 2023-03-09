@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.84cfe349407f4ca1d7d373b74a43ad19.js"
+  "/precache-manifest.816f9e213a239648ac3f4bfd65ff9250.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "mogdan.xyz"});
