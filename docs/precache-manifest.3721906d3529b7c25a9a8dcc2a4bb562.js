@@ -12,7 +12,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Morgan_Dean_Resume_Jan_2021.pdf"
   },
   {
-    "revision": "0c9fb32e4b0587b42f5b",
+    "revision": "a0fea3fff38e7b8147635440c404fb45",
+    "url": "/Morgan_Dean_Resume_Mar_2023.pdf"
+  },
+  {
+    "revision": "cd7b7ce5874940661cb5",
     "url": "/css/app.a2b46427.css"
   },
   {
@@ -28,12 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/me.jpg"
   },
   {
-    "revision": "02fb566f4a7c1d0d77d0d9d788eed5b8",
+    "revision": "b7218dcd4ccec4777d1a775b9ff3dbd8",
     "url": "/index.html"
   },
   {
-    "revision": "0c9fb32e4b0587b42f5b",
-    "url": "/js/app.6779a384.js"
+    "revision": "cd7b7ce5874940661cb5",
+    "url": "/js/app.d3be835f.js"
   },
   {
     "revision": "f0076ac1209c759a36fb",
@@ -44,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/projects.36f7945c.js"
   },
   {
-    "revision": "74da1ed171675d674579",
-    "url": "/js/resume.88053e5a.js"
+    "revision": "d68c24b49b6f1601c13e",
+    "url": "/js/resume.d2c25b31.js"
   },
   {
     "revision": "6fced49c34118d3dcfca895d28982e48",
