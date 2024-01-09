@@ -9,9 +9,8 @@
                         <p>FriendsFM is my
                             current side project -- an iOS and Android app for sharing your currently
                             playing song. A notification is sent to all users at a random time each day
-                            (like <a href="https://bere.al/en">a bereal</a>), prompting users to share
-                            what they're listenting to on Spotify or Apple Music. It is currently in
-                            a closed beta, but should soon be available on respective app stores!</p>
+                            (like <a target="_blank" href="https://bere.al/en">a bereal</a>), prompting users to share
+                            what they're listenting to on Spotify or Apple Music. It is available on Android, iOS, and the web. <a target="_blank" href="https://friendsfm.app">Check it out here!</a></p>
                         <span
                             class="uppercase text-gray-500 dark:text-gray-400 text-xs font-bold tracking-wider transition duration-150">svelte,
                             typescript, tailwindcss, firebase, node.js, capacitorjs</span>
