@@ -11,6 +11,7 @@
                 and attending the University of British Columbia in
                 Vancouver, majoring in Computer Science.
             </p>
+            <p>I love making grilled cheeses, bouldering, mountain biking, and using new technology to make funky things.</p>
             <p class="py-1">Want more? Check out my <a href="https://github.com/mdean808">GitHub</a>!
             </p>
             <!--            <p class="py-1">When I'm not learning about new tech or diving into a <a
@@ -21,15 +22,13 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent } from 'vue';
 
 export default defineComponent({
     name: 'Home',
     data() {
-        return {
-            yearsOld: (new Date().getFullYear()) - 2002
-        };
+        return { yearsOld: new Date().getFullYear() - 2002 - (new Date().getMonth() < 0 || (new Date().getMonth() === 0 && new Date().getDate() < 15) ? 1 : 0) };
     }
 });
 </script>
