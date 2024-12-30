@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Morgan_Dean_Resume_Mar_2023.pdf"
   },
   {
-    "revision": "77104897a3e5084db13a",
+    "revision": "6c123b38b8a5f53dc397",
     "url": "/css/app.c7620b85.css"
   },
   {
@@ -44,16 +44,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/me.jpg"
   },
   {
-    "revision": "169dcd77e0fd6b9752ae9f24a51a315d",
+    "revision": "e656029f06abbe5c25e2cb4cc59023c2",
     "url": "/index.html"
   },
   {
-    "revision": "77104897a3e5084db13a",
-    "url": "/js/app.e9d65c72.js"
+    "revision": "6c123b38b8a5f53dc397",
+    "url": "/js/app.a54f26bf.js"
   },
   {
-    "revision": "11866355cc470a17ac53",
-    "url": "/js/chunk-vendors.c36e45e8.js"
+    "revision": "af1a9e4c3c7e12a045a8",
+    "url": "/js/chunk-vendors.2dee13ee.js"
   },
   {
     "revision": "3fd22751d8376915e66c",

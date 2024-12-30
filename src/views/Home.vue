@@ -3,16 +3,11 @@
         <div class="w-full text-left">
             <!--            <h2 class="dark:text-gray-100 transition duration-150">Hey!</h2>
                         <hr>-->
-            <p class="py-1">I'm Morgan Dean, a {{ yearsOld }}-year-old developer from the Big
-                Island of
-                Hawaii.</p>
-            <p class="py-1">I'm currently working on various
-                <router-link to="/projects">programming projects</router-link>
-                and attending the University of British Columbia in
-                Vancouver, majoring in Computer Science.
+            <p class="py-1">I'm Morgan Dean, a software developer attending the University of British Columbia.</p>
+            <p class="py-1">I'm currently working on <a href="https://friendsfm.app">Friends FM</a>, <a href="https://viralmind.ai">viralmind.ai</a>, and various
+                <router-link to="/projects">programming projects</router-link>.
             </p>
-            <p>I love making grilled cheeses, bouldering, mountain biking, and using new technology to make funky things.</p>
-            <p class="py-1">Want more? Check out my <a href="https://github.com/mdean808">GitHub</a>!
+            <p class="py-1">Want more? Check out my <a href="https://github.com/mdean808">GitHub</a>.
             </p>
             <!--            <p class="py-1">When I'm not learning about new tech or diving into a <a
                 href="https://www.youtube.com/user/enyay" target="_blank">Tom Scott video</a> rabbit hole, I'm outside
