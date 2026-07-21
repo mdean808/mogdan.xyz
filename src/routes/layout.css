@@ -1,1 +1,79 @@
 @import 'tailwindcss';
+@import '@fontsource-variable/manrope';
+@import '@fontsource-variable/roboto-slab';
+
+/* Tailwind v4 defaults `dark:` to prefers-color-scheme; the layout toggles a
+   class on <html> instead, so opt into the class-based variant. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* The @fontsource-variable packages register these families with a "Variable"
+   suffix -- 'Manrope' and 'Roboto Slab' match no @font-face and fall back
+   silently. Registering them here also gives us font-sans/font-serif utilities. */
+@theme {
+  --font-sans: 'Manrope Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Roboto Slab Variable', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  *::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: theme('colors.gray.300');
+    &:hover {
+      background-color: theme('colors.gray.400');
+    }
+  }
+
+  h1 {
+    @apply text-5xl;
+    @apply dark:text-gray-100;
+    font-family: var(--font-serif);
+  }
+  h2 {
+    @apply text-4xl;
+    @apply dark:text-gray-100;
+    font-family: var(--font-serif);
+  }
+  h3 {
+    @apply text-3xl;
+    @apply dark:text-gray-100;
+    font-family: var(--font-serif);
+  }
+  h4 {
+    @apply text-2xl;
+    @apply dark:text-gray-100;
+    font-family: var(--font-serif);
+  }
+  h5 {
+    @apply text-xl;
+    @apply dark:text-gray-100;
+    font-family: var(--font-serif);
+  }
+  p {
+    @apply dark:text-gray-100;
+  }
+  hr {
+    @apply my-2;
+  }
+  a {
+    font-family: var(--font-serif);
+    @apply text-purple-500;
+    @apply dark:text-purple-300;
+    &:hover {
+      @apply underline;
+      text-decoration-color: currentColor;
+    }
+  }
+}
