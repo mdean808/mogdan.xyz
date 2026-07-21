@@ -1,6 +1,6 @@
 <script lang="ts">
   import './layout.css';
-  import favicon from '$lib/assets/favicon.svg';
+  import favicon from '$lib/assets/favicon.ico';
   import ToolTip from '$lib/components/ToolTip.svelte';
   import { page } from '$app/state';
   import { afterNavigate } from '$app/navigation';
@@ -157,7 +157,7 @@
       © 2020 - {new Date().getFullYear()} Morgan Dean
     </p>
     <div class="w-5/6 text-right lg:w-2/12">
-      <ToolTip text="github/mdean808" left="-12%">
+      <ToolTip text="github/mdean808" align="end" class="mr-2 -ml-2.5">
         <a
           href="https://github.com/mdean808"
           target="_blank"
@@ -165,7 +165,7 @@
           title="github/mdean808"
         >
           <svg
-            class="mr-2 -ml-2.5 inline w-10 cursor-pointer rounded-md border-2 border-purple-500 bg-gray-200 fill-current text-purple-500 transition duration-150 hover:border-gray-800 hover:bg-gray-800 hover:text-white dark:border-white dark:bg-gray-600 dark:text-white dark:hover:border-gray-800 dark:hover:bg-white dark:hover:text-gray-800"
+            class="inline w-10 cursor-pointer rounded-md border-2 border-purple-500 bg-gray-200 fill-current text-purple-500 transition duration-150 hover:border-gray-800 hover:bg-gray-800 hover:text-white dark:border-white dark:bg-gray-600 dark:text-white dark:hover:border-gray-800 dark:hover:bg-white dark:hover:text-gray-800"
             viewBox="0 0 512 512"
             preserveAspectRatio="xMidYMid meet"
             aria-hidden="true"
@@ -177,15 +177,15 @@
         </a>
       </ToolTip>
 
-      <ToolTip text="linkedin/morgan-dean" left="-45%" arrowLeft="56%">
+      <ToolTip text="linkedin/morgan-dean" align="end" class="mr-2">
         <a
-          href="https://www.linkedin.com/in/morgan-dean-251467168/"
+          href="https://www.linkedin.com/in/morgan-d-251467168/"
           target="_blank"
           rel="noopener noreferrer"
           title="linkedin/morgan-dean"
         >
           <svg
-            class="mr-2 inline w-10 cursor-pointer rounded-md border-2 border-purple-500 bg-gray-200 fill-current text-purple-500 transition duration-150 hover:text-white dark:border-white dark:bg-gray-600 dark:text-white dark:hover:border-blue-800 dark:hover:bg-white dark:hover:text-blue-800"
+            class="inline w-10 cursor-pointer rounded-md border-2 border-purple-500 bg-gray-200 fill-current text-purple-500 transition duration-150 hover:text-white dark:border-white dark:bg-gray-600 dark:text-white dark:hover:border-blue-800 dark:hover:bg-white dark:hover:text-blue-800"
             viewBox="0 0 512 512"
             preserveAspectRatio="xMidYMid meet"
             aria-hidden="true"
@@ -197,7 +197,7 @@
         </a>
       </ToolTip>
 
-      <ToolTip text="spotify/morganatic" left="-100%" arrowLeft="80%">
+      <ToolTip text="spotify/morganatic" align="end" class="mr-2">
         <a
           href="https://open.spotify.com/user/unicorn%7C808?si=81T8kSMAQl-Dg2o77zcWmQ"
           target="_blank"
@@ -205,7 +205,7 @@
           title="spotify/morganatic"
         >
           <svg
-            class="mr-2 inline w-10 cursor-pointer rounded-md border-2 border-purple-500 bg-gray-200 fill-current text-purple-500 transition duration-150 hover:border-green-500 hover:bg-green-500 hover:text-white dark:border-white dark:bg-gray-600 dark:text-white dark:hover:border-green-500 dark:hover:bg-white dark:hover:text-green-500"
+            class="inline w-10 cursor-pointer rounded-md border-2 border-purple-500 bg-gray-200 fill-current text-purple-500 transition duration-150 hover:border-green-500 hover:bg-green-500 hover:text-white dark:border-white dark:bg-gray-600 dark:text-white dark:hover:border-green-500 dark:hover:bg-white dark:hover:text-green-500"
             viewBox="0 0 512 512"
             preserveAspectRatio="xMidYMid meet"
             aria-hidden="true"
