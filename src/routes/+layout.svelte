@@ -34,7 +34,14 @@
   }
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+  <link rel="icon" href={favicon} />
+  <title
+    >Morgan Dean | {breadcrumbs[breadcrumbs.length - 1].name.replace(/^./, (c) =>
+      c.toUpperCase()
+    )}</title
+  >
+</svelte:head>
 
 <nav
   class="fixed top-0 left-0 h-full w-1/6 justify-between overflow-x-hidden bg-purple-400 px-2 py-2 transition duration-150 dark:bg-[#8973cd]"
